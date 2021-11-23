@@ -1,38 +1,139 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rubik:ital,wght@1,300&display=swap');
+
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  min-height : 100vh;
+  background-color: aqua;
+  font-family: Rubik;
+}
+
+
+.App{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0 0px;
+}
+
+.todo-header{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoAddButton{
+
+  width: 50px;
+  right: 50px;
+  height: 100%;
+  background:none;
+  border-left:none;
+  background-color:burlywood;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top:none;
+  border-bottom:none;
+  border-right:none;
+  font-family:Rubik;
+  font-weight: bold;
+  transition-duration: 0.5s;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-container{
+  margin-top:60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.todo-list-item{
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left:10px;
+  justify-content: space-between;
+  margin-bottom:20px;
+  background: rgba(255, 0, 0, 0.651);
+  cursor:pointer;
+  transition-duration: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checked{
+  background-color: rgba(51, 255, 0, 0.753);
+}
+
+.todo-remove{
+  height: 100%;
+  width: 20%;
+}
+
+.todo-remove button{
+  height:100%;
+  width: 100%;
+  background: none;
+  border:none;
+  font-size:1.3rem;
+  transition-duration: 0.5s;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 999;
+}
+
+.todo-remove button:hover{
+  background-color: gray;
+  cursor: pointer;
+
+}
+
+
+.todoAddButton:hover{
+  cursor: pointer;
+  background-color:sandybrown;
+
+}
+
+.todo-action-container{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
+
+
+}
+
+.todoInput{
+  height: 100%;
+  font-size:1.3rem;
+  
+  border-radius: 10px 0px 0px 10px;
+  border:none;
+  padding:10px;
+  outline: none;
+
+}
+
+.todo-info{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.todoInput:hover{
+  outline: none;
 }
