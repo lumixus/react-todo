@@ -1,6 +1,6 @@
 # Project Preview
 
-![Preview](https://github.com/lumixus/react-todo/preview.gif)
+![Preview](https://github.com/lumixus/react-todo/blob/master/preview.gif)
 
 
 # Getting Started with Create React App
