@@ -3,6 +3,12 @@
 ![Preview](https://github.com/lumixus/react-todo/blob/master/preview.gif)
 
 
+# Try it on Github Pages
+
+
+https://lumixus.github.io/react-todo/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
